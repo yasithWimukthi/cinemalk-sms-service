@@ -8,7 +8,7 @@ import dotenv from 'dotenv'
 dotenv.config();
 const port = process.env.PORT;
 const app = new Koa();
-const router =new Router({prefix:"/api/v1"});
+const router =new Router({prefix:"/api"});
 
 
 app.use(bodyParser());
