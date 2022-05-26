@@ -1,6 +1,6 @@
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
+//const accountSid = process.env.TWILIO_ACCOUNT_SID;
+//const authToken = process.env.TWILIO_AUTH_TOKEN;
+//onst client = require('twilio')(accountSid, authToken);
 
 
 
@@ -17,13 +17,13 @@ let routes = (router) => {
         }
         else
         {
-            client.messages
+           /* client.messages
                 .create({
                     body: '',
                     from: '+15017122661',
                     to: ctx.request.body.number
                 })
-                .then(message => console.log(message.sid));
+                .then(message => console.log(message.sid));*/
             ctx.status = 200;
             ctx.body = "message sent";
         }
